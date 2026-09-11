@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container mt-4" style="max-width: 700px;">
+      <h3 class="mb-3"><%= listing.title %></h3>
+      <img src="<%= listing.image.url %>" class="img-fluid rounded mb-3" style="width: 100%; height: 400px; object-fit: cover;" alt="listing image">
+      <p><%= listing.description %></p>
+      <p class="fw-bold">&#8377; <%= listing.price.toLocaleString("en-IN") %> / night</p>
+      <p><%= listing.location %>, <%= listing.country %></p>
+
+      <a href="/listings/<%= listing._id %>/edit" class="btn btn-outline-secondary me-2">Edit this Listing</a>
+
+      <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE" class="d-inline">
+        <button class="btn btn-outline-danger">Delete this listing</button>
+      </form>
+    </div>
+  </body>
+</html>
