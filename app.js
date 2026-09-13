@@ -5,7 +5,7 @@ const Listing = require("./models/listing.js");
 const path = require("path");
 const methodOverride = require("method-override");
 
-const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+const MONGO_URL = "mongodb+srv://wanderlust:Ramr%408176@cluster0.ysobotq.mongodb.net/wanderlust?appName=Cluster0";
 
 main()
   .then(() => {
@@ -15,7 +15,7 @@ main()
     console.log(err);
   });
 
-async function main() {
+async function main() { 
   await mongoose.connect(MONGO_URL);
 }
 
