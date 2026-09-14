@@ -71,3 +71,18 @@ A full-stack property listing web application inspired by Airbnb, where users ca
 ---
 
 ## 📂 Project Structure
+wanderlust-airbnb-clone/
+├── models/ # Mongoose schemas
+├── views/listings/ # EJS templates
+├── init/ # Sample data seeding script
+├── app.js # Main server file
+└── package.json
+
+
+
+---
+
+## 👤 Author
+
+**Rambabu Sonker**
+[GitHub](https://github.com/RambabuSonker)
